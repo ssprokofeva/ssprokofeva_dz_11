@@ -10,6 +10,7 @@ namespace tumakov13
     {
         static void Main(string[] args)
         {
+
         }
     }
 }

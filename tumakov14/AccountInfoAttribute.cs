@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace tumakov14
 {
-    internal class DeveloperInfoAttribute
+    internal class AccountInfoAttribute : Attribute 
     {
         public string DeveloperName { get; }
-        public string DevelopmentDate { get; }
+        public string OrganizationName { get; }
 
-        public DeveloperInfoAttribute(string developerName, string developmentDate)
+        public AccountInfoAttribute(string developerName, string organizationName)
         {
             DeveloperName = developerName;
-            DevelopmentDate = developmentDate;
+            OrganizationName = organizationName;
         }
     }
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace tumakov14
 {
-    internal class RationalNumber
+    internal class RationalNumber1
     {
-        [DeveloperInfo("Даниил Дмитриев", "2025.01.01")]
+        [DeveloperInfo("Даниил Дмитриев", "2025.01.23")]
         internal class RationalNumber
         {
             public int numerator;
@@ -32,6 +32,9 @@ namespace tumakov14
                 this.numerator = numerator;
                 this.denominator = denominator;
             }
+
+            
+
             public override string ToString()
             {
                 return $"{numerator}/{Denominator}";

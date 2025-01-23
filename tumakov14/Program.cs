@@ -22,19 +22,18 @@ namespace tumakov14
         private static void Task1()
         {
             Bank1 bank = new Bank1();
-            bank.DumpToScreen();
+            object value = bank.DumpToScreen();
         }
         /// <summary>
         /// Упражнение 14.2
         /// </summary>
         private static void Task2()
         {
-            foreach (Attribute a in typeof(RationalNumber).GetCustomAttributes(false))
+            foreach (Attribute a in typeof(RationalNumber1).GetCustomAttributes(false))
             {
-                if (a is DeveloperInfoAttribute)
+                if (a is DeveloperInfoAttribute attribute)
                 {
-                    DeveloperInfoAttribute attribute = a as DeveloperInfoAttribute;
-                    Console.WriteLine($"девелопер: {attribute.DeveloperName}, дата: {attribute.DevelopmentDate}");
+                    Console.WriteLine($"Девелопер: {attribute.DeveloperName}, Дата: {attribute.DevelopmentDate}");
                 }
             }
         }

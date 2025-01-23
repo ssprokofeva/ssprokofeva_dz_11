@@ -9,6 +9,13 @@ namespace tumakov14
 {
     internal class Bank1
     {
+        private double balance;
+
+        internal object DumpToScreen()
+        {
+            throw new NotImplementedException();
+        }
+
         [AccountInfo("ваня долгов", "втб")]
         internal class Bank
         {
